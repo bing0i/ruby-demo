@@ -53,6 +53,7 @@ class Calculator
   end
 end
 
+# example 1
 cal = Calculator.new(4, 3)
 Calculator.printCount
 puts "String representation of cal is #{cal}"
@@ -63,6 +64,7 @@ puts "operand2 of the calculator is #{cal.getOperand2}"
 
 puts "------------------------------------------------"
 
+# example 2
 cal1 = Calculator.new(10, 5)
 Calculator.printCount
 puts "String representation of cal is #{cal1}"
