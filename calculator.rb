@@ -30,11 +30,6 @@ class Calculator
     @operand2 = value
   end
 
-  # define to_s method
-  def to_s
-    "(operand1: #@operand1, operand2: #@operand2)"  # string formatting of the Calculator
-  end
-
   #main methods
   def add
     @operand1 + @operand2
@@ -56,7 +51,6 @@ end
 # example 1
 cal = Calculator.new(4, 3)
 Calculator.printCount
-puts "String representation of cal is #{cal}"
 cal.setOperand1 = 20
 cal.setOperand2 = 50
 puts "operand1 of the calculator is #{cal.getOperand1}"
@@ -67,7 +61,6 @@ puts "------------------------------------------------"
 # example 2
 cal1 = Calculator.new(10, 5)
 Calculator.printCount
-puts "String representation of cal is #{cal1}"
 puts "Add: #{cal1.add}"
 puts "Subtract: #{cal1.subtract}"
 puts "Multiply: #{cal1.multiply}"
